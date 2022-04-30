@@ -1,14 +1,17 @@
 /* даже на широких экранах весь фон - тёмный */
 .page {
-  background-color: #2A2C2F;
+  /* background-color: #2A2C2F; */
+  background-color: blue;
 }
 /*чтобы не делать стилизацию body*/
 .page__container {
+  background-color: blueviolet;
   max-width: 1280px;
   margin: 0 auto;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  justify-content: center; */
+  /* min-height: 100vh; */
   padding-top: 28px;
   padding-bottom: 24px;
   background-color: #2A2C2F;
@@ -20,22 +23,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* padding: 28px 48px 24px; */
+  overflow: hidden;
 
 }
 .content {
-  flex: 1; /* прижимаем footer*/
+  /* flex: 1;  */
+  /* прижимаем footer*/
 }
 .content__section {
-
-}
-.header {
-  padding: 0 48px;
-  display: flex;
-  justify-content: space-between;
+  outline: 1px solid red;
 }
 
 /* HEADER */
 .header {
+  padding: 0 48px;
   display: flex;
   justify-content: space-between;
 }
@@ -46,13 +47,13 @@
 .logo__links {
   align-self: end;
   color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1.17;
   padding-bottom: 6px;
 }
 .logo__lang-link {
   align-self: end;
   color: inherit;
-  font-size: 24px;
-  line-height: 1.17;
   margin-right: 18px;
   text-decoration: none;
   text-align: right;
@@ -106,7 +107,8 @@
 }
 /* INTRO */
 .intro {
-  padding: 92px 148px 0;
+  padding-top: 92px;
+  padding-left: 48px;
 }
 .intro__title {
   margin: 0;
@@ -141,7 +143,7 @@
   padding: 92px 48px 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr)); /*определить px*/
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /*определить px*/
   gap: 16px;
 }
 .photo_grid__item {
@@ -184,7 +186,7 @@
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 2px;
-  margin-bottom: 1;
+  margin-bottom: 12px;
   color:#AAAAAA;
 }
 .place__link {
@@ -295,4 +297,160 @@
   font-size: 14px;
   line-height: 1.14;
   text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .lead {
+    padding: 48px 48px 0;
+  }
+  .intro {
+    padding-left: 48px;
+  }
+  .photo-grid {
+    gap: 14px;
+  }
+  .places-list {
+    padding: 92px 48px 0;
+  }
+  .place {
+    grid-template-columns: 440px 1fr;
+    column-gap: 32px;
+  }
+  .place__desc-paragraph {
+    margin-bottom: 27px;
+  }
+
+}
+@media (max-width: 992px) {
+  .header {
+    padding: 0 24px;
+  }
+  .footer {
+    padding: 88px 24px 0;
+  }
+  .footer__links {
+    flex-wrap: wrap;
+  }
+  .lead {
+    padding: 48px 0 0;
+  }
+  .lead__caption {
+    padding-left: 24px;
+  }
+  .intro {
+    padding: 88px 24px 0;
+  }
+  .intro__text {
+    max-width: 100%;
+  }
+  .photo-grid {
+    padding: 88px 24px 0;
+    gap: 16px;
+  }
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+  .place__url-heading {
+    line-height: 1;
+  }
+  .place__desc-paragraph {
+    font-size: 16px;
+  }
+  .place__desc-paragraph {
+    margin-bottom: 25px;
+  }
+  .places-list {
+    padding: 88px 24px 0;
+  }
+  .place {
+    grid-template-columns: 340px 1fr;
+    column-gap: 28px;
+  }
+  .places-list__place {
+    margin-bottom: 73px;
+  }
+
+}
+
+@media (max-width: 760px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__copyright {
+    padding-top: 48px;
+    text-align: left;
+  }
+  .lead__title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .lead__subtitle {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .lead__subtitle {
+    max-width: 288px;
+  }
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+  .place__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+}
+
+@media (max-width: 660px) {
+  .place {
+    grid-template-columns: 1fr;
+  }
+  .places-list__place {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding: 0 16px;
+  }
+  .header__logo {
+    width: 142px;
+    height: 42px;
+  }
+  .lead {
+    padding: 48px 16px 0;
+  }
+  .lead__title {
+    max-width: 100%;
+  }
+  .lead__subtitle {
+    max-width: 100%;
+  }
+  .lead__caption {
+    padding-left: 16px;
+  }
+  .logo__links {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+  .footer {
+    padding: 64px 16px 0;
+  }
+  .footer__links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .intro {
+    padding: 64px 16px 0;
+  }
+  .photo-grid {
+    padding: 64px 16px 0;
+    gap: 12px;
+  }
+}
+@media (max-width: 375px) {
+
 }
