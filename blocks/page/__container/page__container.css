@@ -1,0 +1,23 @@
+/*чтобы не делать стилизацию body*/
+.page__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 24px;
+  background-color: #2A2C2F;
+  color: #FFFFFF;
+  font-family: 'Inter', 'Arial', sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+@media (max-width: 425px) {
+  .page__container {
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+}

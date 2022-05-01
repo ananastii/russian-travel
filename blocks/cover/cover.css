@@ -1,0 +1,23 @@
+.cover {
+  position: relative;
+  padding: 92px 48px 0;
+}
+
+@media (max-width: 1200px) {
+  .cover {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .cover {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cover {
+    padding-top: 64px;
+  }
+}

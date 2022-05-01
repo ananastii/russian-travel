@@ -1,0 +1,21 @@
+.cover__subtitle {
+  margin: 0;
+  padding-top: 32px;
+  max-width: 360px;
+  font-size: 18px;
+  line-height: 1.22;
+  z-index: 1;
+}
+
+@media (max-width: 760px) {
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+@media (max-width: 425px) {
+  .cover__subtitle {
+    padding-top: 16px;
+  }
+}
