@@ -12,12 +12,10 @@
   -moz-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
 }
 
 @media (max-width: 425px) {
   .page__container {
     padding-top: 16px;
-    padding-bottom: 24px;
   }
 }

@@ -13,9 +13,3 @@
     padding: 48px 0 0;
   }
 }
-
-@media (max-width: 425px) {
-  .lead {
-    padding: 48px 0 0;
-  }
-}
