@@ -14,3 +14,28 @@
   text-align: center;
   text-decoration: none;
 }
+.cover__link:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 92px);
+  opacity: 0.3;
+  background-color: #2A2C2F;
+}
+.cover__link:hover:before {
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .cover__link:before {
+    height: calc(100% - 90px);
+  }
+}
+
+@media (max-width: 425px) {
+  .cover__link:before {
+    height: calc(100% - 64px);
+  }
+}
