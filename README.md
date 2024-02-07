@@ -1,17 +1,17 @@
-# Проект: Путешествие по России
+# Russian travel
+## [Demo](https://ananastii.github.io/russian-travel/)
 
-### Обзор
-* Описание
-* Технологии
+Landing page for an imaginary project about travelling across Russia.
 
-**Описание**
+Created from Figma [design](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-%2B-mobile?type=design&node-id=28503-0&mode=design).
 
-Проект о путешествии по России - какие места можно посетить и что там увидеть, от Калининграда до Байкала.
-[Страница проекта](https://dorkemk.github.io/russian-travel/index.html)
+The website was made durin an education.
 
-**Технологии**
-* вёрстка по БЭМ-методологии
-* Flex
-* адаптивная верстка
-  * медиазапросы
-  * Grid Layout
+## Stack
+- HTML
+- CSS
+- BEM methodology (nested)
+- responsive web design
+ - Grid Layout
+ - Flex
+ - media queries
